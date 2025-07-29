@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>employee-service</artifactId>
+	<artifactId>employee-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>employee-service</name>
-	<description>Employee Service project for Spring Boot</description>
+	<name>employee-client</name>
+	<description>Employee Client project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,23 +32,18 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 			<version>1.18.30</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 		<!-- Swagger UI with Springdoc OpenAPI 3 -->
 		<dependency>
@@ -91,7 +86,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>${project.artifactId}</finalName>
 	</build>
 
 </project>
