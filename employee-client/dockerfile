@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-slim
+COPY target/employee-client.jar employee-client.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "employee-client.jar"]
