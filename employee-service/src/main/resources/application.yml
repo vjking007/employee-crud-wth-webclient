@@ -5,7 +5,7 @@ spring:
   application:
     name: Course
   datasource:
-    url: jdbc:sqlserver://DESKTOP-I1SMM2J\SQL;databaseName=webclient;trustServerCertificate=true
+    url: jdbc:sqlserver://localhost:1433;databaseName=webclient;trustServerCertificate=true
     username: sa
     password: sql@123
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
